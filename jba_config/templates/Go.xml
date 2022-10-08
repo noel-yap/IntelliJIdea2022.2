@@ -1,0 +1,18 @@
+<templateSet group="Go">
+  <template name="fixme" value="// FIXME(nyap): $END$" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="GO" value="true" />
+    </context>
+  </template>
+  <template name="todo" value="// TODO(nyap): $END$" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="GO" value="true" />
+    </context>
+  </template>
+  <template name="test" value="func $TEST_FN$(t *testing.T) {&#10;&#9;type testArgs struct {&#10;&#9;}&#10;&#9;&#10;&#9;testCases := [] struct {&#10;&#9;&#9;testName             string&#10;&#9;&#9;args                 testArgs&#10;&#9;&#9;expectedAssertion    assert.ValueAssertionFunc&#10;&#9;&#9;expectedErrAssertion assert.ErrorAssertionFunc&#10;&#9;}{&#10;&#9;&#9;{&#10;&#9;&#9;&#9;testName: $TEST_NAME$,&#10;&#9;&#9;&#9;args: testArgs{&#10;&#9;&#9;&#9;},&#10;&#9;&#9;&#9;expectedAssertion: func(t assert.TestingT, actual interface{}, _ ...interface{}) bool {&#10;&#9;&#9;&#9;},&#10;&#9;&#9;&#9;expectedErrAssertion: func(t assert.TestingT, err error, _ ...interface{}) bool {&#10;&#9;&#9;&#9;},&#10;&#9;&#9;},&#10;&#9;}&#10;&#9;&#10;&#9;for _, tc := range testCases {&#10;&#9;&#9;t.Run(tc.testName, func(t *testing.T) {&#10;&#9;&#9;&#9;actual, err := $SUT_FN$()&#10;&#9;&#9;&#9;&#10;&#9;&#9;&#9;tc.expectedErrAssertion(t, err)&#10;&#9;&#9;&#9;tc.expectedAssertion(t, actual)&#10;&#9;&#9;})&#10;&#9;}&#10;}" description="Test" toReformat="true" toShortenFQNames="true">
+    <variable name="SUT_FN" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TEST_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TEST_FN" expression="" defaultValue="concat(&quot;Test&quot;, capitalize(SUT_FN))" alwaysStopAt="true" />
+    <context />
+  </template>
+</templateSet>

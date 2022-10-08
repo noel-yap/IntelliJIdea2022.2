@@ -1,0 +1,9 @@
+<application>
+  <component name="GoSdkList">
+    <sdk-url>
+      <set>
+        <option value="file://$USER_HOME$/.gimme/versions/go1.18.4.darwin.amd64" />
+      </set>
+    </sdk-url>
+  </component>
+</application>

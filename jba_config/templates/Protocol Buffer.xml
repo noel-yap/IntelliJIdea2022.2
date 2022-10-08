@@ -1,0 +1,10 @@
+<templateSet group="Protocol Buffer">
+  <template name="field" value="$TYPE$ $FIELD_NAME$ = $FIELD_ID$;" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="FIELD_NAME" expression="snakeCase(TYPE)" defaultValue="" alwaysStopAt="true" />
+    <variable name="FIELD_ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PROTO" value="true" />
+    </context>
+  </template>
+</templateSet>

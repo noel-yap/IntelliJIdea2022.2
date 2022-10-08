@@ -1,0 +1,41 @@
+<application>
+  <component name="Trusted.Paths">
+    <option name="TRUSTED_PROJECT_PATHS">
+      <map>
+        <entry key="$USER_HOME$/.config/iterm2" value="true" />
+        <entry key="$USER_HOME$/.config/karabiner" value="true" />
+        <entry key="$USER_HOME$/.grail" value="true" />
+        <entry key="$USER_HOME$/Library/Application Support/JetBrains" value="true" />
+        <entry key="$APPLICATION_CONFIG_DIR$/.ijwb" value="true" />
+        <entry key="$USER_HOME$/Library/KeyBindings" value="true" />
+        <entry key="$USER_HOME$/tasks/accesshope/grail/accesshope" value="true" />
+        <entry key="$USER_HOME$/tasks/accesshope/grail/accounts" value="true" />
+        <entry key="$USER_HOME$/tasks/accesshope/grail/buf" value="true" />
+        <entry key="$USER_HOME$/tasks/accesshope/grail/example-grpc" value="true" />
+        <entry key="$USER_HOME$/tasks/accesshope/grail/go" value="true" />
+        <entry key="$USER_HOME$/tasks/accesshope/grail/order-manager" value="true" />
+        <entry key="$USER_HOME$/tasks/accounts/grail/accounts" value="true" />
+        <entry key="$USER_HOME$/tasks/accounts/grail/buf" value="true" />
+        <entry key="$USER_HOME$/tasks/accounts/grail/example-grpc" value="true" />
+        <entry key="$USER_HOME$/tasks/default-key-binding-to-karabiner" value="true" />
+        <entry key="$USER_HOME$/tasks/example-grpc" value="true" />
+        <entry key="$USER_HOME$/tasks/order-manager/grail/accounts" value="true" />
+        <entry key="$USER_HOME$/tasks/order-manager/grail/augusta" value="true" />
+        <entry key="$USER_HOME$/tasks/order-manager/grail/go" value="true" />
+        <entry key="$USER_HOME$/tasks/order-manager/grail/order-manager" value="true" />
+        <entry key="$USER_HOME$/tasks/pid" value="true" />
+        <entry key="$USER_HOME$/tasks/semver" value="true" />
+        <entry key="$USER_HOME$/tasks/utils/grail/go" value="true" />
+      </map>
+    </option>
+  </component>
+  <component name="Trusted.Paths.Settings">
+    <option name="TRUSTED_PATHS">
+      <list>
+        <option value="$USER_HOME$/tasks/order-manager/grail" />
+        <option value="$USER_HOME$/tasks/accesshope/grail" />
+        <option value="$USER_HOME$/tasks/accounts/grail" />
+      </list>
+    </option>
+  </component>
+</application>

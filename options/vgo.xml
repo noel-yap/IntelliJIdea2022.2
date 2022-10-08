@@ -1,0 +1,16 @@
+<application>
+  <component name="vgo">
+    <environment>
+      <map>
+        <entry key="GOPROXY">
+          <value>
+            <list>
+              <option value="https://artifactory.ti-apps.aws.grail.com/artifactory/api/go/go,https://proxy.golang.org" />
+              <option value="https://artifactor.ti-apps.aws.grail.com/artifactory/api/go/go,https://proxy.golang.org" />
+            </list>
+          </value>
+        </entry>
+      </map>
+    </environment>
+  </component>
+</application>

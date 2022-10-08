@@ -1,0 +1,16 @@
+<templateSet group="SQL">
+  <template name="table" value="CREATE TABLE IF NOT EXISTS $TABLE$ (&#10;    ID    INT AUTO_INCREMENT NOT NULL,&#10;&#10;    $COL$ $TYPE$             $NULL$$END$,&#10;  &#10;    PRIMARY KEY (ID)&#10;);&#10;DELETE FROM $TABLE$;&#10;&#10;CREATE TABLE IF NOT EXISTS Audit$TABLE$ (&#10;    ID INT AUTO_INCREMENT NOT NULL,&#10;    &#10;    $TABLE$_ID             INT          NOT NULL,&#10;    CreatedUpdatedTime     DATETIME(6)  NOT NULL,&#10;    CreatedUpdatedByUserID VARCHAR(255) NOT NULL,&#10;&#10;    $COL$                  $TYPE$       $NULL$$END$,&#10;  &#10;    PRIMARY KEY (ID),&#10;    FOREIGN KEY ($TABLE$_ID) REFERENCES $TABLE$ (ID)&#10;);&#10;DELETE FROM $TABLE$;&#10;" description="new table definition" toReformat="true" toShortenFQNames="false">
+    <variable name="TABLE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="COL" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NULL" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="SQL_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="fixme" value="# FIXME(nyap): $END$" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="SQL" value="true" />
+    </context>
+  </template>
+</templateSet>

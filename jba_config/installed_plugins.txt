@@ -1,0 +1,7 @@
+org.jetbrains.plugins.go
+com.google.idea.bazel.ijwb
+com.intellij.plugins.gnomekeymap
+Pythonid
+com.intellij.plugins.xwinkeymap
+org.intellij.plugins.hcl
+org.jetbrains.kotlin
