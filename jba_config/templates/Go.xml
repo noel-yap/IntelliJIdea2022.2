@@ -15,4 +15,10 @@
     <variable name="TEST_FN" expression="" defaultValue="concat(&quot;Test&quot;, capitalize(SUT_FN))" alwaysStopAt="true" />
     <context />
   </template>
+  <template name="tc" value="{&#10;&#9;testName: &quot;$TEST_NAME$&quot;,&#10;&#9;args: testArgs{&#10;&#9;&#9;$END$&#10;&#9;},&#10;&#9;expectedAssertion: func(t assert.TestingT, actual interface{}, _ ...interface{}) bool {&#10;&#9;},&#10;&#9;expectedErrAssertion: func(t assert.TestingT, err error, _ ...interface{}) bool {&#10;&#9;},&#10;},&#10;" description="test case" toReformat="false" toShortenFQNames="true">
+    <variable name="TEST_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="GO" value="true" />
+    </context>
+  </template>
 </templateSet>

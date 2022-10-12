@@ -31,7 +31,7 @@
     <keyboard-shortcut first-keystroke="meta open_bracket" />
     <mouse-shortcut keystroke="button4" />
   </action>
-  <action id="Blaze.OpenWorkspaceFile">
+  <action id="Blaze.EditProjectView">
     <keyboard-shortcut first-keystroke="shift meta n" />
   </action>
   <action id="BookmarksView.Delete">
@@ -381,6 +381,9 @@
   </action>
   <action id="SearchEverywhere.NavigateToPrevGroup">
     <keyboard-shortcut first-keystroke="page_up" />
+  </action>
+  <action id="SelectInProjectView">
+    <keyboard-shortcut first-keystroke="shift meta s" />
   </action>
   <action id="SelectNextOccurrence" />
   <action id="ServiceView.AddService">

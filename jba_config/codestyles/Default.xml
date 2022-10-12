@@ -4,9 +4,15 @@
       <option name="USE_TAB_CHARACTER" value="true" />
     </value>
   </option>
+  <GoCodeStyleSettings>
+    <option name="ADD_LEADING_SPACE_TO_COMMENTS" value="true" />
+  </GoCodeStyleSettings>
   <SqlCodeStyleSettings version="6">
     <option name="KEYWORD_CASE" value="2" />
     <option name="TYPE_CASE" value="2" />
     <option name="BUILT_IN_CASE" value="2" />
   </SqlCodeStyleSettings>
+  <codeStyleSettings language="go">
+    <option name="WRAP_ON_TYPING" value="0" />
+  </codeStyleSettings>
 </code_scheme>
